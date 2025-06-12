@@ -8,10 +8,13 @@ div > div {
 
 .item2 {
   background-color: aqua;
+  grid-row: span 2;
 }
 
 .item3 {
   background-color: blueviolet;
+  grid-column:1;
+  grid-row :3/5;
 }
 
 .item4 {
@@ -20,13 +23,20 @@ div > div {
 
 .item5 {
   background-color: cadetblue;
+  grid-column: 3;
 }
 
 .item6 {
   background-color: crimson;
+  grid-column: 2 / 4 ;
+  grid-row:3/5;
 }
 
 
 /* containerクラスのdiv要素にスタイルを適用 */
-
+.container{
+  display:grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns:100px 100px 100px;
+}
 /* item〇クラスにスタイルを適用 */
